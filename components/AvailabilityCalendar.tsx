@@ -12,6 +12,14 @@ type AvailabilityData = {
   illustrative: boolean;
 };
 
+const WHATSAPP_NUMBER = "5511983335993";
+
+function buildWhatsAppLink(day: number, monthLabel: string, time: string) {
+  const monthName = monthLabel.split(" ")[0];
+  const message = `Olá! Gostaria de agendar uma sessão no dia ${day} de ${monthName} às ${time}.`;
+  return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
+}
+
 export default function AvailabilityCalendar() {
   const [data, setData] = useState<AvailabilityData | null>(null);
   const [selectedDay, setSelectedDay] = useState<number | null>(null);
@@ -97,10 +105,23 @@ export default function AvailabilityCalendar() {
             <div className="slot-list">
               {data.workHours.map((t) => {
                 const busy = busyForSelected.includes(t);
+                if (busy) {
+                  return (
+                    <span key={t} className="slot busy">
+                      {t}
+                    </span>
+                  );
+                }
                 return (
-                  <span key={t} className={`slot${busy ? " busy" : ""}`}>
+                  <a
+                    key={t}
+                    className="slot"
+                    href={buildWhatsAppLink(selectedDay, data.month, t)}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                     {t}
-                  </span>
+                  </a>
                 );
               })}
             </div>

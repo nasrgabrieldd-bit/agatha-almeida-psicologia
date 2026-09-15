@@ -255,8 +255,9 @@ blockquote.pull{ position:relative; z-index:2; font-family:var(--font-playfair),
 .slots{ margin-top:18px; border-top:1px solid var(--line); padding-top:16px; }
 .slots h5{ margin:0 0 10px; font-size:13px; text-transform:uppercase; letter-spacing:.06em; color:var(--gold-deep); }
 .slot-list{ display:flex; flex-wrap:wrap; gap:8px; }
-.slot{ font-size:13px; font-weight:600; padding:8px 14px; border-radius:100px; border:1px solid var(--emerald); color:var(--emerald); background:var(--emerald-tint); }
-.slot.busy{ border-color:var(--line); color:var(--ink-faint); background:transparent; text-decoration:line-through; cursor:default; }
+.slot{ font-size:13px; font-weight:600; padding:8px 14px; border-radius:100px; border:1px solid var(--emerald); color:var(--emerald); background:var(--emerald-tint); cursor:pointer; text-decoration:none; display:inline-block; transition:background .15s ease, transform .15s ease; }
+.slot:hover{ background:var(--emerald); color:var(--paper); }
+.slot.busy{ border-color:var(--line); color:var(--ink-faint); background:transparent; text-decoration:line-through; cursor:default; pointer-events:none; }
 .work-window{ font-size:11.5px; color:var(--ink-faint); margin:2px 0 12px; }
 .privacy-note{ max-width:48ch; font-size:13.5px; color:var(--ink-soft); margin-top:22px; }
 .privacy-note strong{ color:var(--ink); }
