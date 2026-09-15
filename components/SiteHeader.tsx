@@ -56,7 +56,7 @@ export default function SiteHeader() {
               <path d="M4 7h16M4 12h16M4 17h16" />
             </svg>
           </button>
-          <a className="btn btn-gold" href="#disponibilidade">
+          <a className="btn btn-gold nav-cta" href="#disponibilidade">
             Ver disponibilidade
           </a>
         </div>

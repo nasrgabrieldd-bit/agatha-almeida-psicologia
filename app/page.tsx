@@ -15,9 +15,6 @@ import SiteFooter from "@/components/SiteFooter";
 export default function Home() {
   return (
     <>
-      {/* TODO: remover essa faixa quando as fotos finais entrarem e o site for para produção */}
-      <div className="draft-tag">RASCUNHO · fotos em alta resolução pendentes</div>
-
       <SiteInteractions />
       <SiteHeader />
       <Hero />

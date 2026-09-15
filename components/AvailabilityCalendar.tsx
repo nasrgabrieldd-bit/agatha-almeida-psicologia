@@ -111,9 +111,6 @@ export default function AvailabilityCalendar() {
         <strong>Você vê apenas se há vaga ou não.</strong> Nomes, motivos e detalhes de outros atendimentos nunca
         aparecem aqui, em nenhuma hipótese.
       </p>
-      {data.illustrative && (
-        <p className="illustrative">dados ilustrativos. a integração real com o Google Agenda entra na fase de desenvolvimento</p>
-      )}
     </>
   );
 }

@@ -31,16 +31,6 @@ export default function HowItWorksSection() {
             </div>
           </div>
           <div className="tcc-box">
-            <svg
-              className="lineart"
-              viewBox="0 0 220 180"
-              style={{ width: 190, right: -30, bottom: -30, opacity: 0.18 }}
-              fill="none"
-              strokeWidth={2}
-            >
-              <path d="M70 40c-25 0-40 20-38 40-14 8-16 34 2 42-4 18 14 34 32 28 8 14 30 16 40 2 20 6 36-12 30-30 16-10 14-34-4-40 2-18-16-32-32-24-8-14-24-20-30-18z" />
-              <path d="M110 40v92M70 80c14 6 22 2 30-8M78 128c10-8 22-10 32-4M148 62c-10 6-16 14-16 26" />
-            </svg>
             <h4>O que é a TCC</h4>
             <p>
               A Terapia Cognitivo-Comportamental é uma abordagem baseada em evidências científicas, focada em
