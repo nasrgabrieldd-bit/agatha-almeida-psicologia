@@ -115,7 +115,7 @@ h1.headline{ font-family:var(--font-playfair), serif; font-weight:600; font-styl
 .headline-flip.open .headline-inner{ transform:rotateX(180deg); }
 .headline-face{ backface-visibility:hidden; }
 .headline-back{ position:absolute; inset:0; transform:rotateX(180deg); display:flex; align-items:center; justify-content:center; }
-.headline-teaser{ font-family:var(--font-work-sans), sans-serif; font-style:normal; font-weight:600; font-size:clamp(1.1rem,2.4vw,1.4rem); color:var(--gold); max-width:34ch; line-height:1.5; }
+.headline-teaser{ font-family:var(--font-work-sans), sans-serif; font-style:normal; font-weight:600; font-size:clamp(1.1rem,2.4vw,1.4rem); color:var(--gold); max-width:44ch; line-height:1.5; text-wrap:balance; }
 @media (hover:hover){ .headline-flip:hover .headline-inner{ transform:rotateX(180deg); } }
 @media (prefers-reduced-motion: reduce){ .headline-inner{ transition:none; } }
 @media (max-width:780px){
