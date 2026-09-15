@@ -89,6 +89,11 @@ nav.links a:hover{ color:var(--emerald); }
   nav.links.open{ display:flex; }
   nav.links a{ padding:14px clamp(20px,4vw,52px); }
   nav.links a:hover{ background:var(--paper); }
+  .headline-hint{ display:none; }
+  .headline-back{ display:none; }
+  .headline-flip{ cursor:default; }
+  .headline-flip.open .headline-inner,
+  .headline-flip:hover .headline-inner{ transform:none; }
 }
 
 /* HERO: dark editorial ground */
